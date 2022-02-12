@@ -12,6 +12,7 @@ export default function Footer() {
         </div>
         <a
           href="https://ng.linkedin.com/in/davinchi-recycling-42a788213"
+          rel="noreferrer"
           target="_blank"
           className="cursor-pointer hover transform ease-in-out hover:text-blue-600"
         >
@@ -42,6 +43,7 @@ export default function Footer() {
         <div className=" text-stone-200 text-center hover:text-blue-600">
           <a
             className="transform hover:text-blue-40 transition ease-in-out hover:scale-125"
+            rel="noreferrer"
             href="https://www.twitter.com/ehiz_briel"
             target="_blank"
           >
