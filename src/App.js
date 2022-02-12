@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Wrapper from "./components/Wrapper";
+import LandingPage from "./components/LandingPage";
+import ServicesPage from "./components/ServicesPage";
+import ContactUsPage from "./components/ContactUsPage";
+import AboutPage from "./components/AboutPage";
+import Error from "./components/Error";
 
-function App() {
+export default function App() {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-davinci">
+      <Wrapper showMenu={showMenu} setShowMenu={setShowMenu}>
+        <Routes>
+          <Route path="/" exact element={<LandingPage />} />
+          <Route path="/services" exact element={<ServicesPage />} />
+          <Route path="/contact" exact element={<ContactUsPage />} />
+          <Route path="/about" exact element={<AboutPage />} />
+          <Route path="*" exact element={<Error />} />
+        </Routes>
+      </Wrapper>
     </div>
   );
 }
-
-export default App;
