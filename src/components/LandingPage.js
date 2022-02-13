@@ -12,9 +12,13 @@ export default function LandingPage() {
   const [message, setMessage] = useState("");
   const titles = [
     "Building sustainability",
+    1000,
     "Efficient plastic waste management",
+    1000,
     "Providing waste diversion solutions",
-    "with workable commercial recycling services.",
+    1000,
+    "with workable commercial recycling services....",
+    4000,
   ];
 
   const submit = (e) => {

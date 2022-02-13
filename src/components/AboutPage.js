@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutPage() {
   return (
-    <div className="h-screen">
+    <div className="md:h-screen mb-5 md:mb-0">
       <main className="max-w-3xl mx-auto p-5 mt-5 text-stone-500">
         <h1 className="text-4xl font-bold my-10">About us</h1>
         <p className=" text-lg">
